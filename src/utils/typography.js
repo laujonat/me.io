@@ -1,20 +1,6 @@
 import Typography from "typography"
-const typography = new Typography({
-  baseFontSize: "18px",
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    "Open Sans",
-    "Helvetica Neue",
-    "Arial",
-    "sans-serif",
-    "-apple-system",
-  ],
-  bodyFontFamily: [
-    "Lora",
-    "Helvetica Neue",
-    "Arial",
-    "sans-serif",
-    "-apple-system",
-  ],
-})
+import altonTheme from "typography-theme-alton"
+const typography = new Typography(altonTheme)
+
+export const { scale, rhythm, options } = typography
 export default typography

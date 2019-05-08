@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
+import SubHeader from "./subheader"
 import Footer from "./footer"
 import styles from "../styles/layout.module.css"
 
@@ -19,26 +20,29 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            subtitle
+            location
           }
         }
       }
     `}
     render={data => (
       <div className={styles.container}>
-        <Header
-          style={{ color: `blue` }}
-          siteTitle={data.site.siteMetadata.title}
-        />
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div
           className={styles.contentWrap}
           style={{
             margin: `1em`,
             maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
+            padding: `0 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <div>{children}</div>
+          <SubHeader
+            subTitle={data.site.siteMetadata.subtitle}
+            location={data.site.siteMetadata.location}
+          />
         </div>
         <Footer className={styles.footer} />
       </div>

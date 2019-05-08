@@ -1,21 +1,21 @@
 import React, { useEffect } from "react"
 import Typed from "typed.js"
+import styles from "../styles/text.module.css"
 import "../styles/box.css"
 
-let kute;
+let kute
 if (typeof window !== `undefined` && typeof document !== `undefined`) {
   kute = require("kute.js")
 }
 
 const options = {
   strings: [
-    // "Hi, I'm Jon.",
-    // "I'm a Software Developer in San Francisco.",
-    "Coming soon.",
-    "Made with Gatsby.js.",
-    // "Let's connect!",
+    "I'm Jonathan, nice to meet you",
+    "My passion is to deliver great user facing products",
+    "We can make the world a better place through code.",
+    "Let's connect!",
   ],
-  typeSpeed: 20,
+  typeSpeed: 30,
 }
 let typed
 function Box() {
@@ -108,8 +108,14 @@ function Box() {
   })
 
   return (
-    <>
-      <div style={{ display: `inline`, marginBottom: `1em`, width: `100%`}} className="typed" />
+    <div className={styles.textWrapper}>
+      <div
+        style={{
+          display: `inline`,
+          width: `100%`,
+        }}
+        className="typed"
+      />
       <div className="box-container">
         <div className="box1" />
         <div className="box2" />
@@ -122,7 +128,7 @@ function Box() {
         <div className="box9" />
         <div className="box10" />
       </div>
-    </>
+    </div>
   )
 }
 
