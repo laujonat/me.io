@@ -1,14 +1,19 @@
 import React, { useEffect } from "react"
-import kute from "kute.js"
 import Typed from "typed.js"
 import "../styles/box.css"
 
+let kute;
+if (typeof window !== `undefined` && typeof document !== `undefined`) {
+  kute = require("kute.js")
+}
+
 const options = {
   strings: [
-    "Hey I'm Jon.",
-    "I'm a Software Developer in San Francisco.",
-    "Designing and building robust web applications if my specialty.",
-    "Let's connect!",
+    // "Hi, I'm Jon.",
+    // "I'm a Software Developer in San Francisco.",
+    "Coming soon.",
+    "Made with Gatsby.js.",
+    // "Let's connect!",
   ],
   typeSpeed: 20,
 }
@@ -16,7 +21,7 @@ let typed
 function Box() {
   useEffect(() => {
     setTimeout(() => {
-      // const tt = document.querySelector(".typed")
+      const tt = document.querySelector(".typed")
       const el1 = document.querySelector(".box1")
       const el2 = document.querySelector(".box2")
       const el3 = document.querySelector(".box3")
@@ -27,7 +32,7 @@ function Box() {
       const el8 = document.querySelector(".box8")
       const el9 = document.querySelector(".box9")
       const el10 = document.querySelector(".box10")
-      // typed = new Typed(tt, options)
+      typed = new Typed(tt, options)
       const tween1 = kute.to(el1, {
         width: 150,
         translateY: 20,
@@ -104,7 +109,7 @@ function Box() {
 
   return (
     <>
-      {/* <div style={{ display: `inline`, marginBottom: `1em`, width: `100%`}} className="typed" /> */}
+      <div style={{ display: `inline`, marginBottom: `1em`, width: `100%`}} className="typed" />
       <div className="box-container">
         <div className="box1" />
         <div className="box2" />

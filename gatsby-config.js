@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Jonathan Lau`,
+    title: `Jonathan..?`,
     description: `Personal portfolio built on Gatsby`,
     author: `@laujonat`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: 'portal',
+        id: 'portal',
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
