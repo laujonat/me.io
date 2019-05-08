@@ -6,8 +6,9 @@ function Header({ siteTitle }) {
     <div>
       <div
         style={{
-          maxWidth: 960,
-          padding: `1em`
+          // maxWidth: 960,
+          padding: `0.75em`,
+          fontSize: `2em`,
         }}
       >
         {siteTitle}

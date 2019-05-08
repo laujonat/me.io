@@ -29,6 +29,12 @@ module.exports = {
     },
     `kute.js`,
     {
+      resolve: `kute.js`,
+      options: {
+        pathToConfigModule: `src/components/box`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,

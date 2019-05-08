@@ -25,7 +25,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className={styles.container}>
-        <Header style={{color: `blue`}}siteTitle={data.site.siteMetadata.title} />
+        <Header
+          style={{ color: `blue` }}
+          siteTitle={data.site.siteMetadata.title}
+        />
         <div
           className={styles.contentWrap}
           style={{

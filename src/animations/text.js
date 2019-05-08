@@ -1,6 +1,5 @@
 import Typed from "typed.js"
 
-
 const options = {
   strings: [
     "Progressional Developer",
@@ -9,7 +8,6 @@ const options = {
   ],
   typeSpeed: 40,
 }
-
 
 function IntroText(props) {
   return new Typed(props.tt, options)
