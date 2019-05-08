@@ -10,8 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
-import styles from "../styles/layout.module.css";
-
+import styles from "../styles/layout.module.css"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,7 +29,7 @@ const Layout = ({ children }) => (
         <div
           className={styles.contentWrap}
           style={{
-            margin: `0 auto`,
+            margin: `0 0 2em`,
             maxWidth: 960,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,

@@ -3,5 +3,11 @@
   bottom: 0;
   right: 0;
   width: 100%;
+  font-size: 0.875em;
   height: 2.5rem;           
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }

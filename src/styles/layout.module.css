@@ -1,6 +1,8 @@
 .container {
   position: relative;
   min-height: 100vh;
+  background-color: black;
+  color: white;
 }
 .content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
