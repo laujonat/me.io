@@ -11,7 +11,6 @@ const IndexPage = () => {
         keywords={[`gatsby`, `application`, `react`, `portfolio`]}
       />
       <Box />
-      
     </Layout>
   )
 }

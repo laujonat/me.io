@@ -27,6 +27,12 @@ module.exports = {
         icon: `src/images/pray-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `kute.js`
+    `kute.js`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 }

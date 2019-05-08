@@ -3,6 +3,7 @@
   min-height: 100vh;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 .content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */

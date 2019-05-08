@@ -4,7 +4,7 @@ import styles from "../styles/footer.module.css"
 function Footer() {
   return (
     <div className={styles.footer}>
-      © {new Date().getFullYear()}, Developed with
+      © {new Date().getFullYear()}, Made with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>
     </div>
