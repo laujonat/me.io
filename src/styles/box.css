@@ -38,7 +38,11 @@
     top: 70%;
     width: 100vw;
     position: absolute;
-    transform: rotate(90deg) scale(1);
+    transform: rotate(90deg) scale(0.9);
+    -webkit-transform: rotate(90deg) scale(0.9); /* Safari & Chrome */
+    -moz-transform: rotate(90deg) scale(1); /* Firefox */
+    -ms-transform: rotate(90deg) scale(1); /* Internet Explorer */
+    -o-transform: rotate(90deg) scale(1);
   }
 }
 

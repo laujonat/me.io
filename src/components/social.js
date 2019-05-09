@@ -8,7 +8,7 @@ const mediaUrl = [
   "https://twitter.com/laujonat",
   "https://medium.com/@jonhlau28",
   "https://www.flickr.com/photos/jjlauu/",
-  "https://www.dropbox.com/s/p5qt9g08ko0pdeb/jonathan_lau_resume2019.pdf?dl=0",
+  "https://www.dropbox.com/s/eyin8vo76j733hy/resume2019.pdf?dl=0",
 ]
 
 function SocialIcons() {
