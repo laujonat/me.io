@@ -1,49 +1,47 @@
+
 .box-container {
-    z-index: 0;
-    margin-top: 4em;
+    margin-top: 6em;
     overflow: visible;
     position: absolute;
-    left: -45%;
-    top: 70%;
+    left: -40%;
+    top: 0;
     width: 100vw;
-    align-items: stretch;
     display: flex;
     flex-direction: column;
-    font-size: 40px;
-    line-height:150px;
     transform: rotate(90deg) scale(1);
-    text-align: center;
 }
 
-@media all (min-width: 769px) {
+@media only screen and (min-width: 481px) {
+  .box-container {
+    left: -42%;
+    top: 34%;
+    position: absolute;
+    transform: rotate(90deg) scale(1);
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .box-container {
     margin-top: 4em;
     width: 100vw;
     position: absolute;
-    left: 15%;
-    top: -30%;
+    left: -42%;
+    top: 40%;
     transform: rotate(90deg) scale(1);
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
-  .box-container {
-    left: -40%;
-    top: 10%;
-    position: absolute;
-    transform: rotate(90deg) scale(1);
-  }
-}
-
-@media all and (max-width: 480px) {
+@media only screen and (min-width: 1024px) {
   .box-container {
     margin-top: 4em;
-    left: -38%;
-    top: -15%;
+    left: -46%;
+    top: 70%;
+    width: 100vw;
     position: absolute;
     transform: rotate(90deg) scale(1);
   }
 }
+
 
 .box1 {
     width: 20px;
