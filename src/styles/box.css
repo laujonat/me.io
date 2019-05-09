@@ -18,7 +18,6 @@
 @media all (min-width: 769px) {
   .box-container {
     margin-top: 4em;
-    /*height: 90vh;*/
     width: 100vw;
     position: absolute;
     left: 15%;
