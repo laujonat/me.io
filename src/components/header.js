@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import SocialIcons from "./social"
 
 function Header({ siteTitle }) {
   return (
@@ -13,6 +14,7 @@ function Header({ siteTitle }) {
       >
         {siteTitle}
       </div>
+      <SocialIcons />
     </div>
   )
 }

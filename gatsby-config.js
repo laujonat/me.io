@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Jonathan..?`,
+    title: `jonathanlau.io`,
+    subtitle: `Full stack developer with a focus on data.`,
+    location: `Currently based in San Francisco, California`,
     description: `Personal portfolio built on Gatsby`,
     author: `@laujonat`,
   },
@@ -8,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-portal`,
       options: {
-        key: 'portal',
-        id: 'portal',
+        key: "portal",
+        id: "portal",
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -45,6 +47,13 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: false,
       },
     },
   ],
