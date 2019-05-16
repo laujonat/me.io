@@ -11,8 +11,9 @@ if (typeof window !== `undefined` && typeof document !== `undefined`) {
 const options = {
   strings: [
     "I'm Jonathan, nice to meet you",
-    "My passion is to deliver great user facing products",
-    "We can make the world a better place through code.",
+    "Building software is my craft",
+    "Learning is my passion",
+    "Specialized front-end developer",
     "Let's connect!",
   ],
   typeSpeed: 30,

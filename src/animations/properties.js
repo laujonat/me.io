@@ -1,3 +1,5 @@
+/* Unused */
+
 // create values and options objects
 var startValues = {}
 var endValues = {}
