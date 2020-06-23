@@ -7,14 +7,16 @@ function Header({ siteTitle }) {
     <div>
       <div
         style={{
-          // maxWidth: 960,
+          position: "relative",
+          display: "flex",
+          flexDirection: "row",
           padding: `0.75em`,
           fontSize: `2em`,
         }}
       >
         {siteTitle}
+        <SocialIcons />
       </div>
-      <SocialIcons />
     </div>
   )
 }

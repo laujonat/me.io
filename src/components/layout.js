@@ -12,6 +12,7 @@ import Header from "./header"
 import SubHeader from "./subheader"
 import Footer from "./footer"
 import styles from "../styles/layout.module.css"
+import SocialIcons from "./social"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,21 +29,26 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className={styles.container}>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          className={styles.contentWrap}
-          style={{
-            margin: `1em`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <div>{children}</div>
-          <SubHeader
-            subTitle={data.site.siteMetadata.subtitle}
-            location={data.site.siteMetadata.location}
-          />
+        <div className={styles.inner}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div
+            style={{
+              margin: `1em`,
+              maxWidth: 960,
+              padding: `0 1.0875rem 1.45rem`,
+              paddingTop: 0,
+            }}
+          >
+            <div>{children}</div>
+            <SubHeader
+              subTitle={data.site.siteMetadata.subtitle}
+              location={data.site.siteMetadata.location}
+            />
+          </div>
+          <div className={styles.arrows}>
+            <div className={styles.arrow} />
+            <div className={styles.arrow} />
+          </div>
         </div>
         <Footer className={styles.footer} />
       </div>

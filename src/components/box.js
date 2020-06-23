@@ -9,13 +9,7 @@ if (typeof window !== `undefined` && typeof document !== `undefined`) {
 }
 
 const options = {
-  strings: [
-    "I'm Jonathan, nice to meet you",
-    "Building software is my craft",
-    "Learning is my passion",
-    "Specialized front-end developer",
-    "Let's connect!",
-  ],
+  strings: [],
   typeSpeed: 30,
 }
 let typed

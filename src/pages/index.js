@@ -10,7 +10,6 @@ const IndexPage = () => {
         title="Home"
         keywords={[`gatsby`, `application`, `react`, `portfolio`]}
       />
-      <Box />
     </Layout>
   )
 }
