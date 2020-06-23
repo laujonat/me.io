@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import SocialIcons from "./social"
 
-function Header({ siteTitle }) {
+function Header({ siteTitle, children, style }) {
   return (
-    <div>
+    <div style={style}>
       <div
         style={{
           position: "relative",
@@ -15,7 +15,7 @@ function Header({ siteTitle }) {
         }}
       >
         {siteTitle}
-        <SocialIcons />
+        {children}
       </div>
     </div>
   )
