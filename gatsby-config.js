@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `jonathanlau.io`,
-    subtitle: `Web Programmer. Maker of some useful things.`,
-    location: `Currently sheltered in Silicon Valley`,
+    subtitle: `Web Programmer. Maker of things.`,
+    location: `Currently in Silicon Valley`,
     description: `Personal portfolio built on Gatsby`,
     author: `@laujonat`,
   },

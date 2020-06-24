@@ -43,7 +43,17 @@ const Layout = ({ children }) => (
             }}
           >
             <div>{children}</div>
-            <SubHeader subTitle={"Discord 🍿: telnetcookie#7354"} />
+            <span
+              style={{
+                color: "rgb(172, 115, 160)",
+                float: "left",
+              }}
+            >
+              <SubHeader subTitle={"Discord 🍿"} />
+            </span>
+            <span>
+              <SubHeader subTitle={": telnetcookie#7354"} />
+            </span>
             <SubHeader
               subTitle={data.site.siteMetadata.subtitle}
               location={data.site.siteMetadata.location}
@@ -62,7 +72,7 @@ const Layout = ({ children }) => (
             title={"Leetcode Practice Tool"}
             link={"https://github.com/laujonat/Algos-In-JS"}
             description={
-              "A tool to for sandboxing practice problems.  Uses Webpack and Nodemon to watch for file changes to recompile in real-time. Generates a GraphQL schema from problem sets and frontend web GUI to display details about your implementation."
+              "Node webserver template to set up a sandbox environment for interview practice problems.  Uses Webpack and Nodemon to watch for file changes to recompile in real-time. Generates a GraphQL schema from problem sets and frontend web GUI to display details about your implementation."
             }
           />
           <Card
@@ -93,7 +103,7 @@ const Layout = ({ children }) => (
               backgroundColor: "green",
               marginBottom: "1em",
             }}
-            siteTitle="recent experience"
+            siteTitle="current employment"
           />
           <Card
             title={"Software Engineer (FE) @Facebook via Teksystems"}
