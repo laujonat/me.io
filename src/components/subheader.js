@@ -6,7 +6,7 @@ function SubHeader({ subTitle, location }) {
   return (
     <div className={styles.subheaderContainer}>
       <div className={styles.subtitle}>{subTitle}</div>
-      <div className={styles.location}>{location}</div>
+      {location && <div className={styles.location}>{location}</div>}
     </div>
   )
 }

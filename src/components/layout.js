@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
             style={{
               margin: `1em`,
               maxWidth: 960,
-              padding: `0 1.0875rem 1.45rem`,
+              padding: `0 1rem 1.45rem`,
               paddingTop: 0,
             }}
           >
@@ -50,36 +50,65 @@ const Layout = ({ children }) => (
             />
           </div>
           <Spacer />
-          <Header style={{ fontSize: "0.8em" }} siteTitle="recent projects" />
+          <Header
+            style={{
+              fontSize: "0.8em",
+              marginBottom: "1em",
+              backgroundColor: "green",
+            }}
+            siteTitle="current projects"
+          />
           <Card
-            title={"Leetcode Practice Tool 🔗"}
+            title={"Leetcode Practice Tool"}
             link={"https://github.com/laujonat/Algos-In-JS"}
             description={
-              "Online code sandboxes such as repl.it & Leetcode is not only slow, but provide limited in debugging features. In order to test solutions that require class instances, such as a Node class, becomes time consuming having to setup the data structures involved with Tree/Linked List-type problems.  So I made a repo for practicing your algorithms.  It uses Webpack and Nodemon to watch and recompile file changes, generates a file dependency graph from a GraphQL schema, and a frontend web GUI to display details about your implementation."
+              "A tool to for sandboxing practice problems.  Uses Webpack and Nodemon to watch for file changes to recompile in real-time. Generates a GraphQL schema from problem sets and frontend web GUI to display details about your implementation."
             }
           />
           <Card
-            title={"Bash dotfiles with setup scripts and local history 🔗"}
+            title={"Bash dotfiles with setup scripts and local history"}
             link={"https://github.com/laujonat/bash"}
             description={
-              "Open-sourced dotfile repos are awesome, but many of the popular ones come with a surplus of tooling I do not regularly use. Pulling various sources around the web, I set up some setup scripts of my own that I can port my environment dotfiles across various Unix-like environments."
+              "Scripts to port my Bash environments between Unix-like environments."
             }
           />
           <Card
-            title={"Browser emulated terminal compiled with ReactReasonML 🔗"}
+            title={"Browser emulated terminal compiled with ReactReasonML"}
             link={"https://github.com/laujonat/xterm-with-reason"}
             description={
-              "A tool to emulate your local terminal environment into the browser. I plan to integrate this with the Leetcode practice tool, providing an all-in-one user interface for practicing algorithms directly from the browser."
+              "Browser-based terminal emulator built using the xterm.js module. Features type-safe Javascript code from the OCaml toolchain, ReasonML."
             }
           />
           <Card
-            title={"gitsbetter.com - Tech blog 🔗"}
+            title={"gitsbetter.com - Tech blog"}
             link={"https://gitsbetter.com"}
             description={
-              "I write blog posts on web development and coding tutorials."
+              "TDIL-type tutorials and blog posts on various Web development topics."
             }
           />
-          <Header style={{ fontSize: "0.8em" }} siteTitle="recent experience" />
+          <Spacer />
+          <Header
+            style={{
+              fontSize: "0.8em",
+              backgroundColor: "green",
+              marginBottom: "1em",
+            }}
+            siteTitle="recent experience"
+          />
+          <Card
+            title={"Software Engineer (FE) @Facebook via Teksystems"}
+            small={"Jun 2019 - present"}
+            description={
+              "A tool to for sandboxing practice problems.  Uses Webpack and Nodemon to watch for file changes to recompile in real-time. Generates a GraphQL schema from problem sets and frontend web GUI to display details about your implementation."
+            }
+          />
+          <Card
+            title={"Software Engineer @Sharespost"}
+            small={"July 2018 - April 2019"}
+            description={
+              "Scripts to port my Bash environments between Unix-like environments."
+            }
+          />
         </div>
         <Footer className={styles.footer} />
       </div>

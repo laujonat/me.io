@@ -1,6 +1,46 @@
 .wrapper {
   padding: 0 20px;
+  width: 100%;
+}
+.small {
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.2em;
+  margin: auto;
+  padding: 0 2em;
+}
+.item {
+  box-sizing: border-box;
+  position: relative;
+  color: #b8f2e6;
+  background-color: var(--color-gray);
+  width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.desc {
+.item::after {
+  background-color: var(--color-gray);
+  display: inline;
+  white-space: pre;
+  content: "🔗1";
+}
+.link::before {
+  display: inline;
+}
+.link {
+  width: fit-content;
+  margin: auto;
+  color: #b8f2e6;
+}
+.link::after {
+  display: inline;
+}
+a .item:hover {
+  color: #b8f2e6;
+  border: none;
+  text-decoration: underline;
+  width: calc(100% - 30px);
+  /* display: inline-block; */
+  float: right;
 }

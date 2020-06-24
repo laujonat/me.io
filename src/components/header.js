@@ -10,8 +10,8 @@ function Header({ siteTitle, children, style }) {
           position: "relative",
           display: "flex",
           flexDirection: "row",
-          padding: `0.75em`,
-          fontSize: `2em`,
+          padding: `0.250em`,
+          fontSize: `1.5em`,
         }}
       >
         {siteTitle}

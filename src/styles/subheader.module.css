@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   font-size: var(--base);
+  padding: 0 10px;
 }
 
 .subtitle {
   width: auto;
+  padding: 0 10px;
 }
 
 .location {
-  padding-top: 0.5em;
+  padding: 0 10px;
   width: auto;
 }
