@@ -12,7 +12,7 @@ const mediaUrl = [
 function SocialIcons() {
   return (
     <div className={styles.wrapper}>
-      <a href={mediaUrl[4]}>Dev Blog</a>
+      <a href={mediaUrl[4]}>Blog</a>
       <a href={mediaUrl[0]}>Github</a>
       <a href={mediaUrl[1]}>Linkedin</a>
       <a href={mediaUrl[3]}>Medium</a>

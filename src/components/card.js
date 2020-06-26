@@ -2,7 +2,7 @@ import React from "react"
 import { useEffect, useState } from "react"
 import styles from "../styles/card.module.css"
 import SubHeader from "./subheader"
-function Card({ title, description, link, children, small }) {
+function Card({ title, description, link, children, small, list }) {
   const [ishover, setIsHover] = useState(false)
   useEffect(() => {
     setIsHover(small)

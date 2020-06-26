@@ -34,7 +34,8 @@
 
 .container {
   position: relative;
-  min-height: calc(100vh + 50vh);
+  line-height: 1.5;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;

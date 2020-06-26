@@ -1,12 +1,11 @@
 .wrapper {
-  padding: 0 20px;
+  padding: 0 10px;
   width: 100%;
 }
 .item {
   box-sizing: border-box;
   position: relative;
   color: #b8f2e6;
-  background-color: var(--color-gray);
   width: fit-content;
   display: flex;
   justify-content: space-evenly;
@@ -20,13 +19,12 @@
   display: block;
   font-size: 1.2em;
   margin: 0 0 0 auto;
-  padding: 0 1.5em;
+  padding: 0 10px;
 }
 .item::after {
-  background-color: var(--color-gray);
   display: inline;
   white-space: pre;
-  content: "🔗1";
+  content: "🔗*";
 }
 .link::before {
   display: inline;
@@ -44,7 +42,6 @@ a .item:hover {
   border: none;
   text-decoration: underline;
   width: calc(100% - 30px);
-  /* display: inline-block; */
   float: right;
 }
 
@@ -52,5 +49,4 @@ a:hover {
   border: none;
   color: orange;
   text-decoration: underline;
-  /* display: inline-block; */
 }
