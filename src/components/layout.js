@@ -109,13 +109,13 @@ const Layout = ({ children }) => (
               margin: `auto`,
               fontSize: "0.8em",
             }}
-            siteTitle="Where am I now?"
+            siteTitle="Current Employment"
           />
           <Card
             title={"Software Engineer @Facebook via Teksystems"}
             small={"Jun 2019 - Present 2020"}
             description={
-              "Currently, I am a contract Software Engineer at Facebook, focusing on frontend engineering efforts. I work extensively in the joint mission between Scaled Solutions Engineering and partnering orgs of Facebook business. Today, I design and develop tooling for UI interfaces and components across various FBB platforms, enabling marketing and sales teams to deliver personalized content to advertisers on Facebook Business."
+              "At Facebook, I am building tools that enable advertisers on Facebook to deliver personalized content to their audiences. Taking part in the joint mission between Scaled Solutions Engineering and partner orgs of Facebook business, I design and develop interfaces with rich user-experiences that support advertisers on various Facebook business websites. Some highlights:"
             }
           />
           <ul>
@@ -137,44 +137,13 @@ const Layout = ({ children }) => (
             </li>
             <li>Tech Stack: Javascript, React, Flow, Jest, XHP, Hack/PHP</li>
           </ul>
-          <Header
-            style={{
-              margin: `auto`,
-              fontSize: "0.8em",
-            }}
-            siteTitle="Where was I before?"
-          />
           <Card
-            title={"Software Engineer @Sharespost"}
+            title={"Software Engineer @Sharespost (Merged with Forge Global)"}
             small={"July 2018 - April 2019"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
+              "I was previously a full-stack web engineer at Sharespost, a fintech company in San Francisco, California. I was responsible for developing and maintaining tools that automated private security transactions.  I worked in cross-functional teams between operations and compliance, taking initiatives in the migration of legacy code into a component-based frontend on the main Sharespost platform. "
             }
           />
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li>Tech Stack: Javascript, React, Ruby on Rails, Postgresql</li>
-          </ul>
         </div>
         <Footer className={styles.footer} />
       </div>
