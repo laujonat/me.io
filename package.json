@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Jonathan Lau <jon@jonathanlau.io>",
   "dependencies": {
-    "gatsby": "^2.23.20",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.4.12",
     "gatsby-plugin-google-analytics": "^2.3.10",
     "gatsby-plugin-i18n": "^1.0.1",
